@@ -128,6 +128,96 @@
       <link rel="preload stylesheet" as="style" media="(max-width: 480px)"
             href="./css/trunk-480.min.css?v=1031" id="style-480" class="stylesheet"/>
 
+            <style>
+              .contact-container {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                  margin: 20px 0;
+              }
+              .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        padding: 40px ;
+    }
+
+    .contact-icon {
+        font-size: 30px;
+        color: #4CAF50;
+        flex-shrink: 0;
+    }
+
+    .contact-text h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #333;
+    }
+
+    .contact-text p {
+        margin: 0;
+        font-size: 16px;
+        color: #555;
+    }
+
+    /* Responsive Spacing */
+    @media (max-width: 768px) {
+        .contact-container {
+            padding: 15px;
+        }
+        .contact-icon {
+            font-size: 20px;
+        }
+        .contact-text h3 {
+            font-size: 16px;
+        }
+        .contact-text p {
+            font-size: 14px;
+        }
+        .new-contact{
+          width: 100% !important;
+          padding: 10px !important;
+        }
+        .contact-item{
+          padding: 20px !important;
+        }
+    }
+              .contact-details, .contact-form {
+                  flex: 1;
+                  padding: 20px;
+                  background: #f9f9f9;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              }
+              .contact-form form {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+              }
+              .contact-form input, .contact-form textarea, .contact-form button {
+                  padding: 10px;
+                  font-size: 16px;
+                  border-radius: 4px;
+                  border: 1px solid #ddd;
+              }
+              .contact-form button {
+                  background-color: #000b43;
+                  color: white;
+                  border: none;
+                  cursor: pointer;
+              }
+              .contact-form button:hover {
+                  background-color: #45a049;
+              }
+          
+              /* Responsive Styles */
+              @media (min-width: 768px) {
+                  .contact-container {
+                      flex-direction: row;
+                  }
+              }
+          </style>
+
     <style type="text/css" id="global-styles">
       :root {
         --color-primary: #eb6a56;
@@ -2366,8 +2456,93 @@
               </div>
             </div>
             
+            <div
+    id="container-widget-1673524703074"
+    data-type="Container"
+    class="grid-row stretched-mobile stretched-tablet"
+    style="
+        padding-bottom: 2.98928%;
+        padding-top: 0px;
+        padding-left: 0;
+        background-color: transparent;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-image: none;
+    "
+>
+    <div class="grid-content">
+        <div class="grid-column" style="width: 100%; padding-left: 0px; padding-right: 0px;">
+            <div class="widget-row">
+                <div class="contact-container">
+                    <!-- Contact Details Section -->
+                    
+    
+    <!-- Phone Section -->
+                    <div style="display: flex; flex-direction: column; width: 40%;background: #f9f9f9;padding: 30px; border-radius: 15px;" class="new-contact">
+                      <h1 style="font-size: 35px;">Contact Us</h1>
+                      <div class="contact-item">
+                        <i class="contact-icon fa fa-phone" style="color: #000000;"></i>
+                        <div class="contact-text">
+                            <h3>Phone</h3><br>
+                            <p><a href="tel:9113025188">+91 9113025188</a></p>
+                        </div>
+                    </div>
+                
+                    <!-- Email Section -->
+                    
+                
+                    <!-- Location Section -->
+                    <div class="contact-item">
+                        <i class="contact-icon fa fa-map-marker" style="color: #000000;"></i>
+                        <div class="contact-text">
+                            <h3>Location</h3><br>
+                            <p><a href="https://maps.app.goo.gl/jACHUSUvDuALHxQp7">GF - 450, Behind MedPlus BTM Mico Layout,
+                              BTM Layout 2nd Stage,
+                              Bangalore, Karnataka 560076</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                      <i class="contact-icon fa fa-clock" style="color: #000000;"></i>
+                      <div class="contact-text">
+                          <h3>Working Hours</h3><br>
+                          <p>Monday - Saturday</p>
+                          <p>07:00 AM - 09:30 AM</p>
+                          <p>06:00 PM - 09:30 PM</p>
+                      </div>
+                  </div>
+                
+                    </div>
+                    <!-- Contact Form Section -->
+                    <div class="contact-form">
+                        <h2 style="font-size: 35px;">Get in Touch</h2> <br>
+                        <form>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+          </div>
+          <div >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1944.4554495595578!2d77.605143!3d12.913448000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae158818a07f8d%3A0x911b068b3691873!2sBangalore%20Orthopaedic%20Clinic%20-%20Dr.%20Pradyumna%20R%20-%20Best%20Orthopedic%20Doctor%20In%20Bangalore%2C%20knee%2C%20Joint%20Replacement%20%26%20Sports%20Injury!5e0!3m2!1sen!2sus!4v1730292953377!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
+        
         <footer class="page-footer">
           <div
             id="container-widget-1672922487858"
@@ -3312,6 +3487,8 @@ style="
           </div>
         </footer>
       </div>
+
+      
     </div>
     <div class="popup-wrapper at-center none" id="analyticsSettings">
       <div class="popup-overlay" style="background: rgba(0, 0, 0, 0.7)"></div>
